@@ -1,31 +1,4 @@
-```html
-<div align="center">
-  
-<!-- Custom Header with Gradient -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Vedant%20Srivastava&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=32&desc=Full-Stack%20Engineer%20%E2%80%A2%20MERN%20Specialist%20%E2%80%A2%20Digital%20Architect&descAlignY=55&descSize=16"/>
 
-</div>
-
-<!-- Elegant Introduction -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Building+tomorrow's+digital+experiences;with+precision%2C+passion%2C+and+purpose." alt="Typing SVG" />
-</div>
-
-<br>
-
-<!-- Floating Cards Layout -->
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-### 🎯 **Current Focus**
-```yaml
-role: "Full-Stack Engineer"
-specialization: "MERN Stack Architecture"
-learning: "Angular.js & Cloud Native"
-passion: "Scalable Web Solutions"
-location: "India 🇮🇳"
-```
 
 ### 💡 **Philosophy**
 > *"Code is poetry written in logic"*
