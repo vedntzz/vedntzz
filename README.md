@@ -1,53 +1,63 @@
-<!-- Hero Section -->
-<h1 align="center">Vedant Srivastava</h1>
-<p align="center"><em>Software Engineer • Master's Student • Builder of AI-powered Products</em></p>
+<!-- 
+    Vedant Srivastava — Notion-Inspired GitHub Profile
+    Replace placeholder images (unsplash.it) with your actual project covers 
+-->
+
+<!-- Cover Banner -->
+<img src="https://unsplash.it/1200/250?image=1063" width="100%" alt="Banner">
+
+<h1 align="center">👋 Hey, I’m Vedant Srivastava</h1>
+<p align="center">
+    <em>Software Engineer • AI Innovator • Product Builder</em>  
+</p>
 
 ---
 
-## ✨ About Me
-Hi, I’m **Vedant**, a software engineer with 2 years of experience building in agile environments and a current master's student in Software Engineering at Drexel University.  
+## 📂 Featured Projects
 
-I enjoy creating **AI-driven applications**, solving **complex technical challenges**, and designing tools that are **minimal yet powerful**.
+| ![AI Team Optimizer](https://unsplash.it/300/180?image=1027) | **AI Team Optimizer**  
+*AI-driven value stream intelligence to match skills with projects and optimize delivery.*  
+Tech: Node.js • React • OpenAI API |
+| --- | --- |
 
----
+| ![Curator News App](https://unsplash.it/300/180?image=1041) | **Curator — Tech News in 60 Words**  
+*A minimalist mobile app delivering concise, curated tech news summaries.*  
+Tech: React Native • Hugging Face • AWS |
+| --- | --- |
 
-## 📌 Featured Projects
-
-**💡 SkillEdge Pro** — AI-powered internal recruitment & talent development platform  
-`Node.js` • `Express` • `PostgreSQL` • `Docker`  
-_Analyzes skill gaps, matches employees to projects, and provides recruiter dashboards._
-
-**📱 Curator** — Minimalist tech news app with 60-word summaries  
-`React Native` • `Hugging Face` NLP  
-_Delivering concise, curated tech news to help readers stay informed without doomscrolling._
-
-**🧠 FocusGuard** — Anti-infinite scrolling productivity app  
-`iOS` • `Swift` • `CoreML`  
-_Detects scrolling patterns, enforces focus breaks, and gamifies attention span improvement._
+| ![FocusFlow](https://unsplash.it/300/180?image=1035) | **FocusFlow — Anti-Infinite Scrolling**  
+*AI-powered mobile app to detect scrolling patterns and boost focus.*  
+Tech: Swift • CoreML • Firebase |
+| --- | --- |
 
 ---
 
 ## 🛠 Skills & Tools
 
-**Languages:** JavaScript (ES6+), Python, Swift, SQL  
-**Frameworks:** Node.js, React Native, Express  
-**AI & NLP:** Hugging Face Transformers, OpenAI API  
-**Tools:** Git, Docker, SonarQube, Postman  
-**Cloud:** AWS (Lambda, S3, DynamoDB), Firebase  
+💻 **Languages:** JavaScript (ES6+), Python, Swift, Java  
+⚙️ **Frameworks:** React, Node.js, Express, React Native  
+🧠 **AI & ML:** OpenAI API, Hugging Face, CoreML  
+☁️ **Cloud:** AWS, Firebase, Vercel  
+📦 **Other Tools:** Git, Docker, SonarQube, Notion  
 
 ---
 
-## 📅 What I’m Working On
-- 🚀 **AI-driven team optimization product** — MVP build in progress  
-- 📱 **Curator** — Growing to first 10,000 users before feature expansion  
-- 🧪 Exploring **multi-LLM routing systems** for cost/performance optimization
+## 🗂 Current Focus
+
+- Building **AI-powered productivity tools**
+- Scaling **Curator** to 10k+ users
+- Experimenting with **LLM routing** for optimized AI workflows
 
 ---
 
-## 📫 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-srivastava)  
-[![Portfolio](https://img.shields.io/badge/Pexels%20Portfolio-000000?style=for-the-badge&logo=behance&logoColor=white)](https://www.pexels.com/@vedant-srivastava)
+## 📫 Let’s Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://linkedin.com/in/vedant-srivastava)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Pexels-9cf?logo=internet-explorer)](https://pexels.com/@vedant-srivastava)
+[![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:your.email@example.com)
 
 ---
 
-<p align="center"><sub>“Building products that work as beautifully as they look.”</sub></p>
+<p align="center">
+    <em>"Great products happen when design, code, and empathy meet."</em>
+</p>
