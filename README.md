@@ -1,69 +1,53 @@
-<!-- Profile Header -->
+<!-- Hero Section -->
 <h1 align="center">Vedant Srivastava</h1>
-<h3 align="center">Full-Stack Engineer · Mobile & Web · MERN + React Native</h3>
-<p align="center">
-  <a href="mailto:vedant.apple@gmail.com"><img src="https://img.shields.io/badge/Email-vedant.apple%40gmail.com-007AFF?style=flat-square&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/vedant-srivastava-a4a65b180/"><img src="https://img.shields.io/badge/LinkedIn-vedant--srivastava-0A66C2?style=flat-square&logo=linkedin" /></a>
-  <a href="https://medium.com/@rustyzz"><img src="https://img.shields.io/badge/Medium-Articles-000000?style=flat-square&logo=medium" /></a>
-</p>
+<p align="center"><em>Software Engineer • Master's Student • Builder of AI-powered Products</em></p>
 
 ---
 
-## 🚀 About Me
-- **2+ years** building & shipping full-stack applications — web and mobile.
-- Delivered **5+ production products** with measurable business impact.
-- Passion for **performance, reliability, and developer experience**.
-- Open to **SWE (Frontend, Mobile, Full-Stack)** roles — remote or US-based.
+## ✨ About Me
+Hi, I’m **Vedant**, a software engineer with 2 years of experience building in agile environments and a current master's student in Software Engineering at Drexel University.  
+
+I enjoy creating **AI-driven applications**, solving **complex technical challenges**, and designing tools that are **minimal yet powerful**.
 
 ---
 
-## 🏆 Featured Projects
+## 📌 Featured Projects
 
-### **Curator — Tech News in 60 Words**
-📱 *React Native · TypeScript · Firebase*  
-- Built MVP in **4 weeks**.  
-- Reduced onboarding drop-off **32%** with analytics-driven UX improvements.  
-- Cut feed load time **45%** via FlatList virtualization & memoization.
+**💡 SkillEdge Pro** — AI-powered internal recruitment & talent development platform  
+`Node.js` • `Express` • `PostgreSQL` • `Docker`  
+_Analyzes skill gaps, matches employees to projects, and provides recruiter dashboards._
 
----
+**📱 Curator** — Minimalist tech news app with 60-word summaries  
+`React Native` • `Hugging Face` NLP  
+_Delivering concise, curated tech news to help readers stay informed without doomscrolling._
 
-### **SkillEdge Pro — Internal Talent Intelligence**
-💼 *React · Node.js · MongoDB · AWS Lambda*  
-- Reduced recruiter shortlist time **40%** via semantic search & ranking.  
-- Cut infra cost **28%** moving from EC2 to serverless.  
-
----
-
-### **Attention Coach — Anti-Infinite-Scroll App**
-🧠 *React Native · Swift Modules · On-device ML*  
-- Pilot users’ daily screen time down **18%** over 14 days.  
-- Gesture detection **p95 < 9ms**, <3% battery usage.
+**🧠 FocusGuard** — Anti-infinite scrolling productivity app  
+`iOS` • `Swift` • `CoreML`  
+_Detects scrolling patterns, enforces focus breaks, and gamifies attention span improvement._
 
 ---
 
-## 💻 Tech Stack
+## 🛠 Skills & Tools
 
-| Frontend | Backend | Cloud / DevOps | Other |
-|----------|---------|----------------|-------|
-| React · React Native · Next.js · TypeScript · Redux/Zustand · Tailwind | Node.js · Express · MongoDB · PostgreSQL · Redis | AWS (Lambda, S3, API Gateway) · Docker · GitHub Actions | WebSockets · Prisma · Sentry · PostHog · Basic NLP/ML pipelines |
-
----
-
-## ✍ Writing & Talks
-- **[Designing Focus Apps That Respect Users](https://medium.com/@rustyzz)** — ethics + telemetry without dark patterns  
-- **Cutting 28% Infra Cost: EC2 → Serverless** — cost/performance trade-offs  
-- **Debugging React Native Performance** — case studies with flamecharts  
+**Languages:** JavaScript (ES6+), Python, Swift, SQL  
+**Frameworks:** Node.js, React Native, Express  
+**AI & NLP:** Hugging Face Transformers, OpenAI API  
+**Tools:** Git, Docker, SonarQube, Postman  
+**Cloud:** AWS (Lambda, S3, DynamoDB), Firebase  
 
 ---
 
-## 📫 Contact
-📧 **Email:** [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)  
-🔗 **LinkedIn:** [vedant-srivastava](https://www.linkedin.com/in/vedant-srivastava-a4a65b180/)  
-📝 **Medium:** [@rustyzz](https://medium.com/@rustyzz)  
+## 📅 What I’m Working On
+- 🚀 **AI-driven team optimization product** — MVP build in progress  
+- 📱 **Curator** — Growing to first 10,000 users before feature expansion  
+- 🧪 Exploring **multi-LLM routing systems** for cost/performance optimization
 
 ---
 
-<!-- Footer Note -->
-<p align="center">
-  <sub>“I value clarity, instrumentation, and reliability over flashy UIs — but I know how to make them both beautiful and fast.”</sub>
-</p>
+## 📫 Connect With Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-srivastava)  
+[![Portfolio](https://img.shields.io/badge/Pexels%20Portfolio-000000?style=for-the-badge&logo=behance&logoColor=white)](https://www.pexels.com/@vedant-srivastava)
+
+---
+
+<p align="center"><sub>“Building products that work as beautifully as they look.”</sub></p>
