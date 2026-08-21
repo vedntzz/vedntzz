@@ -1,214 +1,58 @@
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--                         VEDANT SRIVASTAVA                            -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+# Vedant Srivastava
 
-<div align="center">
+I build LLM agent systems and the developer tooling around them.
 
-<!-- Typing SVG — swap username once you deploy -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=Vedant+Srivastava;AI+Engineer+%E2%80%A2+Systems+Builder+%E2%80%A2+Shipped+5+MVPs" alt="Typing SVG" /></a>
+Right now that means a CLI that turns AI coding sessions into a signed, verifiable record of what was spent and what actually shipped — on npm, 1,000+ tests. Before that, four years writing production backends: Spring Boot services at Capgemini, event-driven serverless on AWS at NBME. MS Software Engineering, Drexel, 2026.
 
-<br/>
+I care about systems that hold up under real load and real money — correctness enforced in the database, not the prompt.
 
-<!-- Social links — flat-square, monochrome -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-srivastava)
-[![Email](https://img.shields.io/badge/vs657@drexel.edu-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:vs657@drexel.edu)
-[![AWS](https://img.shields.io/badge/AWS_Certified-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)](https://aws.amazon.com/certification/)
-[![GCP](https://img.shields.io/badge/GCP_Certified-4285F4?style=flat-square&logo=googlecloud&logoColor=white)](https://cloud.google.com/certification)
+Open to AI Engineer and Backend roles.
 
-</div>
+[LinkedIn](https://www.linkedin.com/in/vedant-srivastava) · [vs657@drexel.edu](mailto:vedant.apple@gmail.com)
 
 ---
 
-### `$ whoami`
+## Selected work
 
-```text
-3 yrs enterprise Java/Spring Boot (Capgemini)  →  Production serverless AWS at NBME
-→  5 shipped AI products  →  MS Software Engineering, Drexel '26
-→  1st Place Philly CodeFest 2025  →  Published LLM research
-→  Looking for remote AI/GenAI Engineer & Backend/Platform roles
-```
+### The Session — `@vedantzz/session`
+[npm](https://www.npmjs.com/package/@vedantzz/session) · [source](https://github.com/vedntzz/The-Session)
 
----
+A CLI that measures what AI coding actually costs and what it actually shipped. Every session is recorded as an append-only, signed chain — Ed25519 keypair, per-record hash and previous-hash, so a third party can verify a log with no access to the signing machine. Outcome detection with tiered confidence, USD cost from measured token counts (deduped by request ID — naive line-summing of Claude Code transcripts overcounts by ~80%), and `session estimate` giving median/p90 cost for a class of work once enough history exists.
 
-### `$ ls projects/`
+**1,000+ tests. Published on npm, v0.3.1.** TypeScript, Node, JSONL store, git-ref sync.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Poneglyph
+[source](https://github.com/vedntzz/Poneglyph)
 
-#### 🧠 [Ohara](https://github.com/vedant-srivastava)
-**RAG Documentation Search**
-<br/>
-Hybrid retrieval (dense + sparse), cross-encoder reranking, NLI-based hallucination prevention. Production-grade retrieval pipeline.
-<br/><br/>
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
+Multi-agent document intelligence — messy ingest, temporal drift detection across document versions, pixel-grounded citations back to the source page. Hybrid dense + sparse retrieval with cross-encoder reranking, evaluated with RAGAS.
 
-</td>
-<td width="50%" valign="top">
+**Top 3% of ~20,000 entrants, Cerebral Valley × Anthropic hackathon.** Python, LangChain, Vercel/Railway.
 
-#### ⚡ [LLMForge](https://github.com/vedant-srivastava)
-**LLM Ops Platform**
-<br/>
-Semantic caching, PyTorch-based smart routing, LoRA fine-tuning pipeline, model drift detection. Full inference optimization stack.
-<br/><br/>
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+### SkillEdge Pro
+[source](https://github.com/vedntzz/skilledgePro)
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+Multi-agent recruitment platform — skill-gap analysis, project-to-candidate matching, recruiter dashboards. LangGraph orchestration over LangChain, Node, PostgreSQL, Docker.
 
-#### 🔍 [CodeLens](https://github.com/vedant-srivastava)
-**Codebase Intelligence Agent**
-<br/>
-Tree-sitter AST parsing, NetworkX dependency graphs, multi-step agentic analysis with tool use. Understands codebases structurally.
-<br/><br/>
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NetworkX](https://img.shields.io/badge/NetworkX-4C8CBF?style=flat-square&logo=python&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_API-191919?style=flat-square&logo=anthropic&logoColor=white)
+**1st place, Philly CodeFest 2025 (Comcast Challenge).**
 
-</td>
-<td width="50%" valign="top">
+### Ohara
+[source](https://github.com/vedntzz/Ohara)
 
-#### 🛠 [FlowForge](https://github.com/vedant-srivastava)
-**AI Dev Session CLI**
-<br/>
-CodeBERT embeddings, cross-session RAG memory, session standup & retrospective automation. The CLI for "Agile for AI."
-<br/><br/>
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=flat-square&logo=chroma&logoColor=white)
-![Click](https://img.shields.io/badge/Click_CLI-000?style=flat-square&logo=gnubash&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 📰 [Curator](https://github.com/vedant-srivastava)
-**Newsletter Aggregation Platform**
-<br/>
-2,000+ real users. Aggregates, deduplicates, and summarizes newsletters with HuggingFace NLP. Shipped and growing.
-<br/><br/>
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-</td>
-<td width="50%" valign="top">
-
-#### 🏆 [SkillEdge Pro](https://github.com/vedant-srivastava)
-**AI Recruitment Platform**
-<br/>
-1st Place — Philly CodeFest 2025. Multi-agent skill gap analysis, recruiter dashboards, project-to-candidate matching.
-<br/><br/>
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-</td>
-</tr>
-</table>
-
-> All projects are at MVP stage and running — these are shipped products, not portfolio exercises.
+Retrieval engine for technical documentation. Hybrid dense + sparse search, cross-encoder reranking on the candidate set, and an NLI check that refuses to answer when the retrieved context doesn't entail the claim — so it returns nothing rather than something wrong. Scored with RAGAS. Python, LangChain, FAISS.
 
 ---
 
-### `$ cat stack.yml`
+## Stack
 
-```yaml
-languages:
-  - Java  # 3 yrs production
-  - Python
-  - TypeScript / JavaScript
-  - SQL
+**Languages** Java · Python · TypeScript · SQL
+**Backend** Spring Boot · FastAPI · Node/Express
+**AI** Claude Agent SDK · LangChain · LangGraph · PyTorch · HuggingFace · LoRA/PEFT · RAGAS · FAISS · Chroma · Pinecone
+**Cloud** AWS Lambda · S3 · DynamoDB · EventBridge · CDK · Terraform · Docker · Railway
+**Data** PostgreSQL · MongoDB · Redis · SQLite
+**Frontend** React · Next.js · Angular
 
-backend:
-  - Spring Boot 3.x
-  - Node.js / Express
-  - FastAPI
-
-ai_ml:
-  - LangChain
-  - PyTorch
-  - HuggingFace Transformers
-  - Sentence Transformers
-  - LoRA / PEFT
-  - RAGAS
-
-vector_stores:
-  - FAISS
-  - ChromaDB
-  - Pinecone
-
-cloud:
-  aws:
-    - Lambda
-    - S3
-    - DynamoDB
-    - EventBridge
-    - CDK
-    - SNS
-  gcp: certified
-
-data:
-  - PostgreSQL
-  - MongoDB
-  - Redis
-
-frontend:
-  - React
-  - Next.js
-  - Angular
-
-infra:
-  - Docker
-  - Terraform
-  - n8n
-  - Bamboo CI/CD
-```
+AWS Cloud Practitioner · GCP Cloud Digital Leader
 
 ---
 
-### `$ uptime`
-
-<div align="center">
-
-<!-- Replace 'vedant-srivastava' with your actual GitHub username -->
-<img src="https://github-readme-stats.vercel.app/api?username=vedant-srivastava&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff" height="170" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedant-srivastava&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" height="170" />
-
-</div>
-
-<div align="center">
-
-<!-- Streak stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com?user=vedant-srivastava&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
-
-</div>
-
----
-
-### `$ tail -f currently.log`
-
-```
-[2026-04-09] Seeking remote AI/GenAI Engineer & Backend/Platform roles (USD, contract or FT)
-[2026-04-09] Building automated job search pipeline with n8n + CRM tooling
-[2026-04-09] Writing about AI engineering architecture on LinkedIn
-[2026-04-09] Exploring multi-LLM routing for cost/performance optimization
-```
-
----
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=vedant-srivastava&style=flat-square&color=58a6ff&label=Profile+Views" />
-
-<br/><br/>
-
-<sub>I name my projects after One Piece islands — if you get the references, we'll get along.</sub>
-
-</div>
+<sub>Projects are named after One Piece islands. If you catch the references, we'll get along.</sub>
