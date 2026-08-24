@@ -8,7 +8,7 @@ I care about systems that hold up under real load and real money — correctness
 
 Open to AI Engineer and Backend roles.
 
-[LinkedIn](https://www.linkedin.com/in/vedant-srivastava) · [vs657@drexel.edu](mailto:vedant.apple@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/vedant-srivastava-a4a65b180/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)
 
 ---
 
