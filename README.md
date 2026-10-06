@@ -8,7 +8,7 @@ I care about systems that hold up under real load and real money — correctness
 
 Open to AI Engineer and Backend roles.
 
-[LinkedIn](https://www.linkedin.com/in/vedant-srivastava-a4a65b180/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/vedant-srivastava-ai/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)
 
 ---
 
@@ -19,7 +19,7 @@ Open to AI Engineer and Backend roles.
 
 A CLI that measures what AI coding actually costs and what it actually shipped. Every session is recorded as an append-only, signed chain — Ed25519 keypair, per-record hash and previous-hash, so a third party can verify a log with no access to the signing machine. Outcome detection with tiered confidence, USD cost from measured token counts (deduped by request ID — naive line-summing of Claude Code transcripts overcounts by ~80%), and `session estimate` giving median/p90 cost for a class of work once enough history exists.
 
-**1,000+ tests. Published on npm, v0.3.1.** TypeScript, Node, JSONL store, git-ref sync.
+**1,000+ tests. Published on npm.** TypeScript, Node, JSONL store, git-ref sync.
 
 ### Poneglyph
 [source](https://github.com/vedntzz/Poneglyph)
@@ -28,10 +28,15 @@ Multi-agent document intelligence — messy ingest, temporal drift detection acr
 
 **Top 3% of ~20,000 entrants, Cerebral Valley × Anthropic hackathon.** Python, LangChain, Vercel/Railway.
 
+### rag-generator
+[source](https://github.com/vedntzz/rag-generator)
+
+Drop any document set in at runtime and get cited, grounded answers — or an explicit "not found" instead of a guess. Ports-and-adapters design so the embedder, vector store and LLM swap without touching business logic. Built with strict TDD, plus a test that enforces function and file size limits. Python, FastAPI, Claude, fastembed.
+
 ### SkillEdge Pro
 [source](https://github.com/vedntzz/skilledgePro)
 
-Multi-agent recruitment platform — skill-gap analysis, project-to-candidate matching, recruiter dashboards. LangGraph orchestration over LangChain, Node, PostgreSQL, Docker.
+Upload a resume, pick a target role, get the skill gaps and an LLM-generated learning path to close them. spaCy resume parsing, gap scoring, OpenAI for the plan. FastAPI, React, SQLAlchemy.
 
 **1st place, Philly CodeFest 2025 (Comcast Challenge).**
 
