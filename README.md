@@ -1,12 +1,10 @@
 # Vedant Srivastava
 
-I build LLM agent systems and the developer tooling around them.
+**AI Engineer. I build guardrails for coding agents — models propose, plain code decides.**
 
-Right now that means a CLI that turns AI coding sessions into a signed, verifiable record of what was spent and what actually shipped — on npm, 1,000+ tests. Before that, four years writing production backends: Spring Boot services at Capgemini, event-driven serverless on AWS at NBME. MS Software Engineering, Drexel, 2026.
+4 years shipping production backends — Spring Boot at Capgemini, event-driven AWS serverless at NBME. MS Software Engineering, Drexel '26. My last two projects carry ~2,900 tests between them, and every headline number below has a command that reproduces it.
 
-I care about systems that hold up under real load and real money — correctness enforced in the database, not the prompt.
-
-Open to AI Engineer and Backend roles.
+**Open to AI Engineer and Backend roles — Bengaluru, Delhi NCR, Hyderabad, Pune, or remote.** Relocating from Philadelphia.
 
 [LinkedIn](https://www.linkedin.com/in/vedant-srivastava-ai/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)
 
@@ -14,46 +12,47 @@ Open to AI Engineer and Backend roles.
 
 ## Selected work
 
-### The Session — `@vedantzz/session`
-[npm](https://www.npmjs.com/package/@vedantzz/session) · [source](https://github.com/vedntzz/The-Session)
+### Knack — never argue the same PR twice
+[source](https://github.com/vedntzz/Knack) · built solo in 10 days, Meta Global AI Developer Hackathon
 
-A CLI that measures what AI coding actually costs and what it actually shipped. Every session is recorded as an append-only, signed chain — Ed25519 keypair, per-record hash and previous-hash, so a third party can verify a log with no access to the signing machine. Outcome detection with tiered confidence, USD cost from measured token counts (deduped by request ID — naive line-summing of Claude Code transcripts overcounts by ~80%), and `session estimate` giving median/p90 cost for a class of work once enough history exists.
+Your team already argued out how the code should look — in merged PR threads no coding agent has read. Knack reads that history, compiles each decision into an ast-grep rule, and blocks the agent at edit time when it ships the rejected alternative, citing who decided.
 
-**1,000+ tests. Published on npm.** TypeScript, Node, JSONL store, git-ref sync.
+- **Two models, zero models in the verdict.** Muse Spark proposes rules; Muse Spark Open attacks them with held-out variants Spark never sees. The block itself is a plain-code hook: no model, no network, **17 ms**.
+- **Tested on real repos.** apache/airflow + fastapi: 101 PRs → 107 decisions → 12 installed rules → 5 that block. A person confirms before anything can block.
+- **Provable.** `scripts/reproduce.sh` re-derives every claim in ~80 s and ends `PROOF: PASS`. ~1,900 tests, pyright clean, receipts in a hash chain.
+
+Python · ast-grep · uv · Meta Muse models · Baseten
+
+### The Session — [`@vedantzz/session`](https://www.npmjs.com/package/@vedantzz/session)
+[source](https://github.com/vedntzz/The-Session) · on npm
+
+A CLI that measures what AI coding actually costs and what it actually shipped. Every session is an append-only, Ed25519-signed hash chain a third party can verify without the signing machine. Found that naive summing of Claude Code transcripts **overcounts cost by ~80%** — fixed by deduping on request ID. `session estimate` gives median/p90 cost for a class of work.
+
+**1,000+ tests.** TypeScript · Node · JSONL · git-ref sync
 
 ### Poneglyph
-[source](https://github.com/vedntzz/Poneglyph)
+[source](https://github.com/vedntzz/Poneglyph) · **Top 3% of ~20,000, Cerebral Valley × Anthropic hackathon**
 
-Multi-agent document intelligence — messy ingest, temporal drift detection across document versions, pixel-grounded citations back to the source page. Hybrid dense + sparse retrieval with cross-encoder reranking, evaluated with RAGAS.
+Multi-agent document intelligence: temporal drift detection across document versions and pixel-grounded citations back to the source page. Hybrid dense + sparse retrieval, cross-encoder reranking, evaluated with RAGAS.
 
-**Top 3% of ~20,000 entrants, Cerebral Valley × Anthropic hackathon.** Python, LangChain, Vercel/Railway.
-
-### rag-generator
-[source](https://github.com/vedntzz/rag-generator)
-
-Drop any document set in at runtime and get cited, grounded answers — or an explicit "not found" instead of a guess. Ports-and-adapters design so the embedder, vector store and LLM swap without touching business logic. Built with strict TDD, plus a test that enforces function and file size limits. Python, FastAPI, Claude, fastembed.
+Python · LangChain · Vercel/Railway
 
 ### SkillEdge Pro
-[source](https://github.com/vedntzz/skilledgePro)
+[source](https://github.com/vedntzz/skilledgePro) · **1st place, Philly CodeFest 2025 (Comcast Challenge)**
 
-Upload a resume, pick a target role, get the skill gaps and an LLM-generated learning path to close them. spaCy resume parsing, gap scoring, OpenAI for the plan. FastAPI, React, SQLAlchemy.
+Resume + target role in, skill gaps and an LLM-built learning path out. spaCy parsing, gap scoring, OpenAI. FastAPI · React · SQLAlchemy
 
-**1st place, Philly CodeFest 2025 (Comcast Challenge).**
-
-### Ohara
-[source](https://github.com/vedntzz/Ohara)
-
-Retrieval engine for technical documentation. Hybrid dense + sparse search, cross-encoder reranking on the candidate set, and an NLI check that refuses to answer when the retrieved context doesn't entail the claim — so it returns nothing rather than something wrong. Scored with RAGAS. Python, LangChain, FAISS.
+**Also:** [Ohara](https://github.com/vedntzz/Ohara) — doc retrieval with an NLI check that refuses unsupported answers · [rag-generator](https://github.com/vedntzz/rag-generator) — runtime-pluggable RAG, ports & adapters, strict TDD
 
 ---
 
 ## Stack
 
-**Languages** Java · Python · TypeScript · SQL
-**Backend** Spring Boot · FastAPI · Node/Express
-**AI** Claude Agent SDK · LangChain · LangGraph · PyTorch · HuggingFace · LoRA/PEFT · RAGAS · FAISS · Chroma · Pinecone
-**Cloud** AWS Lambda · S3 · DynamoDB · EventBridge · CDK · Terraform · Docker · Railway
-**Data** PostgreSQL · MongoDB · Redis · SQLite
+**Languages** Java · Python · TypeScript · SQL<br>
+**Backend** Spring Boot · FastAPI · Node/Express<br>
+**AI** Claude Agent SDK · LangChain · LangGraph · PyTorch · HuggingFace · LoRA/PEFT · RAGAS · FAISS · Pinecone<br>
+**Cloud** AWS Lambda · S3 · DynamoDB · EventBridge · CDK · Terraform · Docker<br>
+**Data** PostgreSQL · MongoDB · Redis · SQLite<br>
 **Frontend** React · Next.js · Angular
 
 AWS Cloud Practitioner · GCP Cloud Digital Leader
