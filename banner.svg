@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Vedant Srivastava, AI Engineer. Guardrails for coding agents: models propose, plain code decides.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d10"/>
+      <stop offset="1" stop-color="#14110c"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="14" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="14" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="14" fill="none" stroke="#2a2620"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="56" y="92" fill="#8b8478" font-size="15" letter-spacing="3">AI ENGINEER · BACKEND · 4 YRS</text>
+    <text x="54" y="148" fill="#f3efe7" font-size="46" font-weight="700">Vedant Srivastava</text>
+    <text x="56" y="194" fill="#c9c2b6" font-size="19">I build guardrails for coding agents.</text>
+    <text x="56" y="224" fill="#c9c2b6" font-size="19">Models propose. <tspan fill="#f5a524">Plain code decides.</tspan></text>
+    <text x="56" y="276" fill="#6f695f" font-size="14">ex-Capgemini · ex-NBME · MS SE Drexel '26 · open to India / remote</text>
+
+    <rect x="676" y="58" width="470" height="204" rx="10" fill="#07080a" stroke="#2a2620"/>
+    <circle cx="700" cy="80" r="5" fill="#3a352d"/><circle cx="718" cy="80" r="5" fill="#3a352d"/><circle cx="736" cy="80" r="5" fill="#3a352d"/>
+    <text x="760" y="85" fill="#5c574e" font-size="12">knack · pre-edit hook</text>
+    <text x="700" y="122" fill="#8b8478" font-size="14">$ agent edit airflow/…/routes.py</text>
+    <rect x="696" y="136" width="84" height="24" rx="4" fill="#f5a524"/>
+    <text x="705" y="153" fill="#0b0d10" font-size="14" font-weight="700">BLOCKED</text>
+    <text x="792" y="153" fill="#f3efe7" font-size="14">rejected in review, PR #75025</text>
+    <text x="700" y="186" fill="#8b8478" font-size="14">  rule pinned · sha256 confirmed</text>
+    <text x="700" y="210" fill="#8b8478" font-size="14">  no model · no network · <tspan fill="#f5a524">17 ms</tspan></text>
+    <text x="700" y="242" fill="#5c574e" font-size="13">PROOF: PASS · ~1,900 tests</text>
+  </g>
+</svg>
