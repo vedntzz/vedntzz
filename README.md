@@ -1,62 +1,62 @@
-# Vedant Srivastava
+<img src="./banner.svg" alt="Vedant Srivastava — AI Engineer. Guardrails for coding agents: models propose, plain code decides." width="100%">
 
-**AI Engineer. I build guardrails for coding agents — models propose, plain code decides.**
+**I make AI coding agents safe to trust on a real codebase.** Four years of production backends at Capgemini and NBME taught me where systems break; now I build the guardrails that stop LLMs from breaking them.
 
-4 years shipping production backends — Spring Boot at Capgemini, event-driven AWS serverless at NBME. MS Software Engineering, Drexel '26. My last two projects carry ~2,900 tests between them, and every headline number below has a command that reproduces it.
+**Hiring for AI Engineer or Backend?** I'm open to roles in Bengaluru, Delhi NCR, Hyderabad, Pune or remote.<br>
+[LinkedIn](https://www.linkedin.com/in/vedant-srivastava-ai/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com) · [npm](https://www.npmjs.com/package/@vedantzz/session)
 
-**Open to AI Engineer and Backend roles — Bengaluru, Delhi NCR, Hyderabad, Pune, or remote.** Relocating from Philadelphia.
+## Proof
 
-[LinkedIn](https://www.linkedin.com/in/vedant-srivastava-ai/) · [vedant.apple@gmail.com](mailto:vedant.apple@gmail.com)
+| | |
+|---|---|
+| **1st place** | Philly CodeFest 2025, Comcast Challenge. Presented the winning build to Comcast's CFO |
+| **Top 3% of ~20,000** | Cerebral Valley × Anthropic hackathon, judged by the Claude Code team |
+| **~2,900 tests** | across Knack and The Session, both built test-first |
+| **Shipped on npm** | [`@vedantzz/session`](https://www.npmjs.com/package/@vedantzz/session) |
+| **Published** | *LLMs and Transfer Learning*, IJRPR Vol 4 Issue 11, 2023 |
 
----
+## What I've built
 
-## Selected work
+### [Knack](https://github.com/vedntzz/Knack): never argue the same PR twice
+*Solo, 10 days, Meta Global AI Developer Hackathon*
 
-### Knack — never argue the same PR twice
-[source](https://github.com/vedntzz/Knack) · built solo in 10 days, Meta Global AI Developer Hackathon
+Every team has argued the same review point twice. The decision lives in a merged PR thread no coding agent has read, so the agent ships the rejected approach again. Knack reads that history, turns each decision into an ast-grep rule, and blocks the agent at edit time, citing the PR where it was decided.
 
-Your team already argued out how the code should look — in merged PR threads no coding agent has read. Knack reads that history, compiles each decision into an ast-grep rule, and blocks the agent at edit time when it ships the rejected alternative, citing who decided.
+- **No model in the verdict.** One Meta model proposes rules, a second attacks them with held-out variants. The block is plain code: no model, no network, 17 ms.
+- **Run on real repos.** apache/airflow and fastapi: 101 PRs → 107 decisions → 12 rules → 5 that block. A person confirms before anything blocks.
+- **Every number is reproducible.** One script re-derives every claim in ~80 s and ends `PROOF: PASS`. ~1,900 tests, pyright clean.
 
-- **Two models, zero models in the verdict.** Muse Spark proposes rules; Muse Spark Open attacks them with held-out variants Spark never sees. The block itself is a plain-code hook: no model, no network, **17 ms**.
-- **Tested on real repos.** apache/airflow + fastapi: 101 PRs → 107 decisions → 12 installed rules → 5 that block. A person confirms before anything can block.
-- **Provable.** `scripts/reproduce.sh` re-derives every claim in ~80 s and ends `PROOF: PASS`. ~1,900 tests, pyright clean, receipts in a hash chain.
+`Python` `ast-grep` `Meta Muse models` `Baseten`
 
-Python · ast-grep · uv · Meta Muse models · Baseten
+### [The Session](https://github.com/vedntzz/The-Session): what did that AI coding session actually cost?
+A CLI on npm that records every AI coding session as an Ed25519-signed hash chain anyone can verify. Found that naively summing Claude Code transcripts **overcounts spend by ~80%** and fixed it by deduping on request ID. Gives median/p90 cost estimates for a class of work. **1,000+ tests.**
 
-### The Session — [`@vedantzz/session`](https://www.npmjs.com/package/@vedantzz/session)
-[source](https://github.com/vedntzz/The-Session) · on npm
+`TypeScript` `Node`
 
-A CLI that measures what AI coding actually costs and what it actually shipped. Every session is an append-only, Ed25519-signed hash chain a third party can verify without the signing machine. Found that naive summing of Claude Code transcripts **overcounts cost by ~80%** — fixed by deduping on request ID. `session estimate` gives median/p90 cost for a class of work.
+### [Poneglyph](https://github.com/vedntzz/Poneglyph): document intelligence that cites the pixel
+Multi-agent pipeline that detects drift across document versions and grounds every citation to the exact spot on the source page. Hybrid retrieval, cross-encoder reranking, RAGAS evals. **Top 3% of ~20k.**
 
-**1,000+ tests.** TypeScript · Node · JSONL · git-ref sync
+`Python` `LangChain`
 
-### Poneglyph
-[source](https://github.com/vedntzz/Poneglyph) · **Top 3% of ~20,000, Cerebral Valley × Anthropic hackathon**
+### [SkillEdge Pro](https://github.com/vedntzz/skilledgePro): resume in, learning path out
+Skill-gap scoring against a target role plus an LLM-built plan to close the gaps. **Won Philly CodeFest 2025.**
 
-Multi-agent document intelligence: temporal drift detection across document versions and pixel-grounded citations back to the source page. Hybrid dense + sparse retrieval, cross-encoder reranking, evaluated with RAGAS.
+`FastAPI` `React` `spaCy`
 
-Python · LangChain · Vercel/Railway
+<sub>Also: [Ohara](https://github.com/vedntzz/Ohara), retrieval that refuses unsupported answers via an NLI check · [rag-generator](https://github.com/vedntzz/rag-generator), pluggable RAG with ports & adapters</sub>
 
-### SkillEdge Pro
-[source](https://github.com/vedntzz/skilledgePro) · **1st place, Philly CodeFest 2025 (Comcast Challenge)**
+## Where I've worked
 
-Resume + target role in, skill gaps and an LLM-built learning path out. spaCy parsing, gap scoring, OpenAI. FastAPI · React · SQLAlchemy
-
-**Also:** [Ohara](https://github.com/vedntzz/Ohara) — doc retrieval with an NLI check that refuses unsupported answers · [rag-generator](https://github.com/vedntzz/rag-generator) — runtime-pluggable RAG, ports & adapters, strict TDD
-
----
+| | |
+|---|---|
+| **NBME** · Software Engineer · 2025–26 | Modernized legacy services to Java 21 / Spring Boot 3 (Struts → Spring, javax → jakarta). Built AWS serverless error-reporting pipelines on Lambda, EventBridge, DynamoDB and CDK |
+| **Synergy Technofin** · AI Engineer, contract · 2024–25 | Shipped GenAI skill-mapping in an HRMS (benchmarked BERT, chose Claude). Built agentic document retrieval over Microsoft Graph |
+| **Capgemini** · Software Engineer · 2022–24 | Sole engineer on an SAP client account, owning DB design, dashboards and client demos. Split a client out of a shared ~50 GB database onto its own |
 
 ## Stack
 
-**Languages** Java · Python · TypeScript · SQL<br>
-**Backend** Spring Boot · FastAPI · Node/Express<br>
-**AI** Claude Agent SDK · LangChain · LangGraph · PyTorch · HuggingFace · LoRA/PEFT · RAGAS · FAISS · Pinecone<br>
-**Cloud** AWS Lambda · S3 · DynamoDB · EventBridge · CDK · Terraform · Docker<br>
-**Data** PostgreSQL · MongoDB · Redis · SQLite<br>
-**Frontend** React · Next.js · Angular
-
-AWS Cloud Practitioner · GCP Cloud Digital Leader
-
----
+**AI:** Claude Agent SDK, LangChain, LangGraph, RAGAS, PyTorch, HuggingFace, LoRA/PEFT, FAISS, Pinecone<br>
+**Backend:** Java, Spring Boot, Python, FastAPI, TypeScript, Node, PostgreSQL, Redis, MongoDB<br>
+**Cloud:** AWS (Lambda, EventBridge, DynamoDB, S3, CDK), Terraform, Docker · AWS & GCP certified
 
 <sub>Projects are named after One Piece islands. If you catch the references, we'll get along.</sub>
