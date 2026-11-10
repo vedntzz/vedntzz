@@ -1,4 +1,4 @@
-<img src="./banner.svg" alt="Vedant Srivastava — AI Engineer. Guardrails for coding agents: models propose, plain code decides." width="100%">
+<img src="./banner.svg?v=2" alt="Vedant Srivastava — AI Engineer. Guardrails for coding agents: models propose, plain code decides." width="100%">
 
 **I make AI coding agents safe to trust on a real codebase.** Four years of production backends at Capgemini and NBME taught me where systems break; now I build the guardrails that stop LLMs from breaking them.
 
